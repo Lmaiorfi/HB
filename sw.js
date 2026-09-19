@@ -2,14 +2,14 @@
 // Scopo: far funzionare l'app anche offline, una volta aperta almeno una
 // volta. Non contatta MAI un server: tutto quello che serve viene messo
 // in cache alla prima installazione e poi riletto da lì.
-const CACHE_NAME = 'hb-homework-balancer-v1';
+const CACHE_NAME = 'hb-homework-balancer-v2';
 const CORE_ASSETS = [
   './',
   './index.html',
   './manifest.json',
-  './icons/icon-192.png',
-  './icons/icon-512.png',
-  './icons/icon-maskable-512.png'
+  './icon-192.png',
+  './icon-512.png',
+  './icon-maskable-512.png'
 ];
 
 self.addEventListener('install', (event) => {
