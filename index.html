@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0">
 <title>HB-HomeworkBalancer</title>
+<link rel="manifest" href="manifest.json">
 
 <!-- Meta per l'esperienza "app" su iPhone: aggiungendo alla schermata Home tramite
      Safira > Condividi > "Aggiungi a Home", l'app si apre a schermo intero come una vera app. -->
@@ -4452,6 +4453,15 @@ async function init(){
 }
 
 init();
+
+// Registrazione del Service Worker: serve a far funzionare l'app offline
+// e a renderla "installabile" come app vera dal browser (senza questo
+// il browser non mostra l'icona di installazione).
+if('serviceWorker' in navigator){
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js').catch(() => {});
+  });
+}
 </script>
 </body>
 </html>
