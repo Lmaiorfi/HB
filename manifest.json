@@ -1,0 +1,26 @@
+{
+  "name": "HB · Homework Balancer",
+  "short_name": "HB",
+  "description": "Pianifica i compiti e bilancia il carico dei giorni.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F4F1FB",
+  "theme_color": "#F4F1FB",
+  "lang": "it",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
